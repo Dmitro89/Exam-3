@@ -1,0 +1,139 @@
+.container {
+  max-width: $container-width;
+  width: 100%;
+  padding: 0 $col-padding;
+  margin: 0 auto;
+}
+
+.full-container {
+  width: 100%;
+  padding: 0 $col-padding;
+}
+
+.row {
+  margin-left: -$col-padding;
+  margin-right: -$col-padding;
+
+  &:before, &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+
+[class*="col-"],
+[class^="col-"] {
+  float: left;
+  padding: 0 $col-padding;
+}
+
+.col-1 {
+  width: (100% / 12);
+}
+
+.col-2 {
+  width: 2 * (100% / 12);
+}
+
+.col-3 {
+  width: (100% / 4);
+}
+
+.col-4 {
+  width: 4 * (100% / 12);
+}
+
+.col-5 {
+  width: 5 * (100% / 12);
+}
+
+.col-6 {
+  width: (100% / 2);
+}
+
+.col-7 {
+  width: 7 * (100% / 12);
+}
+
+.col-8 {
+  width: 8 * (100% / 12);
+}
+
+.col-9 {
+  width: 3 * (100% / 4);
+}
+
+.col-10 {
+  width: 10 * (100% / 12);
+}
+
+.col-11 {
+  width: 11 * (100% / 12);
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-offset-1 {
+  margin-left: 1 * (100% / 12);
+}
+
+.col-offset-2 {
+  margin-left: 3 * (100% / 12);
+}
+
+.col-offset-3 {
+  margin-left: (100% / 4);;
+}
+
+.col-offset-4 {
+  margin-left: 4 * (100% / 12);
+}
+
+.col-offset-5 {
+  margin-left: 5 * (100% / 12);
+}
+
+.col-offset-6 {
+  margin-left:  (100% / 2);
+}
+
+.col-offset-7 {
+  margin-left: 7 * (100% / 12);
+}
+
+.col-offset-8 {
+  margin-left: 8 * (100% / 12);
+}
+
+.col-offset-9 {
+  margin-left: 3 * (100% / 4);
+}
+
+.col-offset-10 {
+  margin-left: 10 * (100% / 12);
+}
+
+.col-offset-11 {
+  margin-left: 11 * (100% / 12);
+}
+
+/* img responsive*/
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto; 
+}
+
+img{
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=_grid.css.map */
+
+a, button{
+    transition: all 0.5s ease;
+}

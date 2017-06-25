@@ -1,0 +1,4 @@
+pro/
+*.psd
+
+node_modules/

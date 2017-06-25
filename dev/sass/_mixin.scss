@@ -1,0 +1,49 @@
+@mixin transition($prop, $time, $funct){
+  transition: $prop $time $funct;
+  -webkit-transition: $prop $time $funct;
+  -moz-transition: $prop $time $funct;
+  -o-transition: $prop $time $funct;
+  -ms-transition: $prop $time $funct;
+}
+
+@mixin box-sizing{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+
+@mixin btn-hover($color, $bg, $border){
+  color: $color;
+  background: $bg;
+  border: 1px solid $border;
+
+  &:hover, &:focus{
+    background: $border;
+    color: $bg;
+  }
+
+  &:active{
+    background: rgba($border, 0.8);
+  }
+}
+
+@mixin a-hover($color){
+  text-decoration: underline;
+  color: $color;
+  @include transition(all, 0.5s, ease);
+
+  &:hover, &:active, &:focus{
+    opacity: 0.8;
+
+  }
+}
+
+@mixin form-elem{
+  outline: none;
+
+  &:hover, &:focus{
+    color: #ccc;
+  }
+}
